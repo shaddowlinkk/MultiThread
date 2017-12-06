@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class run {
     public static void main(String[] args){
-        JFrame frame = new JFrame("TFC Smithing");
+        JFrame frame = new JFrame("MTPROG");
         MainGui init = new MainGui();
         frame.setContentPane(init.main);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
