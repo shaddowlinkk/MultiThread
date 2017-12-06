@@ -25,7 +25,7 @@ public countThread(String _FileName){
             for(int i =0;i<line.length;i++){
                 countLetter+=line[i].length();
             }
-            doc+=ph+"\n";
+            doc+=ph+"\n\n";
         }
         RunSubFrame r = new RunSubFrame(FileName,countWord,countLetter,doc);
     }
