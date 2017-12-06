@@ -17,13 +17,16 @@ public countThread(String _FileName){
         }
         int countWord=0;
         int countLetter=0;
+        String doc="";
         while(in.hasNext()){
-            String[] line = in.nextLine().split(" ");
+            String ph= in.nextLine();
+            String[] line = ph.split(" ");
             countWord+=line.length;
             for(int i =0;i<line.length;i++){
                 countLetter+=line[i].length();
             }
+            doc+=ph+"\n";
         }
-        RunSubFrame r = new RunSubFrame(FileName,countWord,countLetter);
+        RunSubFrame r = new RunSubFrame(FileName,countWord,countLetter,doc);
     }
 }
